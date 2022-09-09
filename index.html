@@ -73,5 +73,28 @@
             <td>2 Hrs</td>
         </tr>
     </table>
+
+    <hr>
+    <p>This is Blockquote</p> 
+    
+        <blockquote>Done Resizing Event <a href="https://stackoverflow.com/questions/5489946/how-to-wait-for-the-end-of-resize-event-and-only-then-perform-an-action">Click here for Answer</a></blockquote>
+    <br><p><b>Code Snippet:</b> </p>
+    <pre>
+        
+        var resizeTimer;
+
+    $(window).on('resize', function(e) {
+
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+
+    // Run code here, resizing has "stopped"
+            
+    }, 250);
+
+    }); 
+        
+    </pre>
+
 </body>
 </html>
